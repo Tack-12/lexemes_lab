@@ -16,7 +16,7 @@ public class stringcode {
     }
 
     public  String read_line() {
-        String line = "EMPTY smth is wrong! ";
+        String line = "";
         final String filepath = this.filename;
 
         try {

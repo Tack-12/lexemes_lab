@@ -6,11 +6,14 @@ public class main {
         stringcode filereader = new stringcode();
         formattingString commentremoved = new formattingString();
         tokenizing tokenizer = new tokenizing();
-        filereader.set_filename("src/Codes/SquareGame.jack");
+        FileHandle fileHandle = new FileHandle();
+        filereader.set_filename("src/Codes/Main.jack");
 
         output = filereader.read_line();
         s= commentremoved.removeComments(output);
         s=tokenizer.tokenizeJackCode(s);
+
+        fileHandle.createAndWriteFile(s);
 
 
         //System.out.print(output);

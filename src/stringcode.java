@@ -4,7 +4,6 @@ import java.io.IOException;
 
 public class stringcode {
     private String filename;
-
     public void set_filename(String filename) {
         this.filename = filename;
 
@@ -14,6 +13,7 @@ public class stringcode {
 
         return this.filename;
     }
+
 
     public  String read_line() {
         String line = "";
@@ -38,6 +38,8 @@ public class stringcode {
 
         return  line ;
     }
+
+
 }
 
 

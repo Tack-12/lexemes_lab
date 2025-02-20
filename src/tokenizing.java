@@ -30,9 +30,6 @@ public class tokenizing {
                 xmlOutput.append("<keyword> ").append(token).append(" </keyword>\n");
             } else if (SYMBOLS.contains(token.charAt(0))) {
                 String xmlSymbol = switch (token) {
-                    case "<" -> "&lt;";
-                    case ">" -> "&gt;";
-                    case "&" -> "&amp;";
                     default -> token;
                 };
                 xmlOutput.append("<symbol> ").append(xmlSymbol).append(" </symbol>\n");
